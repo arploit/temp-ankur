@@ -1,0 +1,278 @@
+$background-color: #f8f18c;
+$Page-color: #e7b512d2;
+$font-color: #fff;
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: $background-color;
+	color: $font-color;
+
+	.bottom-zigzag {
+		z-index: 1;
+		&:after {
+			background: linear-gradient(-45deg, $background-color 16px, transparent 0),
+				linear-gradient(45deg, $background-color 16px, transparent 0);
+			background-position: left-bottom;
+			background-repeat: repeat-x;
+			background-size: 32px 32px;
+			content: ' ';
+			display: block;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			height: 55px;
+		}
+	}
+
+	.header-container {
+		background-image: url(./assets/bg-5.svg);
+		height: 90vh;
+		padding: 1.3rem;
+
+		.navbar {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			font-size: 1.3rem;
+
+			.navbar-list {
+				display: flex;
+				list-style: none;
+				margin-left: auto;
+				margin-top: 2rem;
+			}
+
+			.navbar-item {
+				margin-left: 2rem;
+			}
+
+			#logo {
+				height: 5rem;
+				position: absolute;
+				left: -1rem;
+			}
+
+			#buyNow {
+				height: 3rem;
+				width: 8rem;
+				margin-top: -1rem;
+				font-size: 1.1rem;
+				background-color: $Page-color;
+				color: red;
+				border-radius: 5%;
+				position: relative;
+
+				letter-spacing: 0.5px;
+				outline: none;
+				border: none;
+			}
+		}
+		.headerDetailSec {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			margin: 0;
+
+			.headerImageSec {
+				img {
+					width: 50rem;
+					height: 60rem;
+				}
+			}
+
+			.headerDescSec {
+				color: #fff;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				height: 100%;
+				padding-top: 10px;
+				h1 {
+					font-size: 90px;
+
+					span {
+						color: $Page-color;
+					}
+				}
+
+				p {
+					font-size: 25px;
+					margin-top: 1.5rem;
+				}
+			}
+		}
+	}
+
+	.classicMasala {
+		height: 105vh;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 5rem;
+		color: #000;
+		grid-template-areas:
+			'prodimage prodAdv'
+			'productCard productCard';
+
+		.prodimage {
+			grid-area: prodimage;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.prodAdv {
+			grid-area: prodAdv;
+			display: flex;
+			flex-direction: column;
+
+			align-items: center;
+
+			h1 {
+				margin: 3rem;
+				color: crimson;
+			}
+			p {
+				width: 60%;
+				margin-bottom: 3rem;
+				font-weight: 500;
+				font-size: 1.1em;
+			}
+		}
+
+		.addons {
+			background-image: url('./assets/Combined Shape-7.svg');
+			background-repeat: no-repeat;
+			background-size: 30rem 7.5rem;
+			margin-top: 3.6rem;
+
+			#addonsB {
+				position: relative;
+				left: 13rem;
+				top: -5rem;
+				background-color: crimson;
+				width: 6rem;
+				height: 2rem;
+				outline: none;
+				cursor: pointer;
+				text-align: center;
+				color: #fff;
+				border-radius: 16px;
+				border: none;
+			}
+
+			#cinnamonImg {
+				height: 5.5rem;
+				position: relative;
+				left: -5.5rem;
+				top: 2rem;
+			}
+
+			#cinnamonDet {
+				position: relative;
+				left: 7rem;
+				top: -4rem;
+				width: 54%;
+			}
+		}
+
+		.productCard {
+			grid-area: productCard;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 4rem;
+
+			h3 {
+				color: rgba(0, 0, 0, 0.4);
+				font-size: 14px;
+				margin-bottom: 1rem;
+			}
+
+			.prodCats {
+				display: flex;
+				flex-direction: row;
+				margin-top: 1rem;
+
+				.prodCat {
+					display: flex;
+					flex-direction: row;
+					list-style: none;
+					margin: 0rem 2.5rem;
+					padding: 0.2rem;
+					width: 14rem;
+					align-items: center;
+					background-color: rgba(255, 255, 255, 0.3);
+					border-radius: 10px;
+					letter-spacing: 0.5px;
+
+					img {
+						height: 5rem;
+						width: 5rem;
+					}
+				}
+				.active {
+					background-color: rgba(255, 255, 255, 1);
+					border: 1px solid red;
+				}
+
+				.arrow-button {
+					border: none;
+					background: transparent;
+					img {
+						height: 2rem;
+						width: 2rem;
+					}
+				}
+			}
+		}
+	}
+
+	.DelAndHel {
+		height: 90vh;
+		background-color: $Page-color;
+		display: grid;
+		grid-template-columns: 1.1fr 1fr;
+		grid-template-areas: 'descSect imageSect';
+		padding-top: 1rem;
+		.descSect {
+			display: flex;
+			justify-content: center;
+			grid-area: descSect;
+		}
+
+		.imageSect {
+			grid-area: imageSect;
+			img {
+				width: 100%;
+				height: 89.9%;
+			}
+		}
+	}
+
+	.top-zigzag {
+		z-index: 3;
+		position: relative;
+		&:before {
+			background: linear-gradient(-45deg, $Page-color 16px, transparent 0),
+				linear-gradient(45deg, $Page-color 16px, transparent 0);
+			background-position: left top;
+			background-repeat: repeat-x;
+			background-size: 22px 32px;
+			content: ' ';
+			display: block;
+
+			height: 32px;
+			width: 191%;
+
+			position: relative;
+			bottom: 43.9rem;
+			left: 0;
+		}
+	}
+}

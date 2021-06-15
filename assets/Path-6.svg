@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="28px" viewBox="0 0 31 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <defs>
+        <filter x="-8.3%" y="-44.3%" width="116.5%" height="188.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="3" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.175111997 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Design-v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Saffola-Masala-Oats_Landing-Page_Mobile_v3.1" transform="translate(-215.000000, -5031.000000)" fill="#DB0812">
+            <g id="buy-now" filter="url(#filter-1)" transform="translate(0.000000, 5010.000000)">
+                <path d="M224.826667,34.7924152 L228.72,31.1497006 C228.946667,30.9500998 229.293333,30.9500998 229.506667,31.1497006 C229.72,31.3493014 229.72,31.6736527 229.506667,31.8857285 L226,35.1666667 L229.506667,38.4476048 C229.72,38.6472056 229.72,38.9840319 229.506667,39.1836327 C229.293333,39.3832335 228.946667,39.3832335 228.72,39.1836327 L224.826667,35.5284431 C224.613333,35.3288423 224.613333,35.004491 224.826667,34.7924152 Z" id="Path" transform="translate(227.166667, 35.166667) rotate(-90.000000) translate(-227.166667, -35.166667) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

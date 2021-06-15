@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="810px" height="883px" viewBox="0 0 810 883" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path Copy</title>
+    <g id="Design-v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ipad-1" transform="translate(0.000000, -180.000000)" fill="#DB0812">
+            <g id="banner" transform="translate(-1.000000, 0.000000)">
+                <g id="bg" transform="translate(0.028233, -0.000000)">
+                    <path d="M1.79100272,180.393314 C-1.41457646,197.703972 4.78715811,231.190903 20.3962064,280.854108 C43.8097789,355.348915 31.694157,348.431726 103.86501,402.715863 C176.035863,457 297.023699,434.908179 342.229463,434.908179 C387.435227,434.908179 611.645508,363.597442 699.942706,363.814132 C758.807504,363.958592 796.621557,363.958592 813.384865,363.814132 L815.413098,413.00332 L815.413098,1063 L1.41309763,1063 L1.79100272,180.393314 Z" id="Path-Copy"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,352 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f8f18c;
+  color: #fff;
+}
+
+body .bottom-zigzag {
+  z-index: 1;
+}
+
+body .bottom-zigzag:after {
+  background: linear-gradient(-45deg, #f8f18c 16px, transparent 0), linear-gradient(45deg, #f8f18c 16px, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 32px 32px;
+  content: ' ';
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 55px;
+}
+
+body .header-container {
+  background-image: url(./assets/bg-5.svg);
+  height: 90vh;
+  padding: 1.3rem;
+}
+
+body .header-container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+body .header-container .navbar .navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  margin-top: 2rem;
+}
+
+body .header-container .navbar .navbar-item {
+  margin-left: 2rem;
+}
+
+body .header-container .navbar #logo {
+  height: 5rem;
+  position: absolute;
+  left: -1rem;
+}
+
+body .header-container .navbar #buyNow {
+  height: 3rem;
+  width: 8rem;
+  margin-top: -1rem;
+  font-size: 1.1rem;
+  background-color: #e7b512d2;
+  color: red;
+  border-radius: 5%;
+  position: relative;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+body .header-container .headerDetailSec {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 0;
+}
+
+body .header-container .headerDetailSec .headerImageSec img {
+  width: 50rem;
+  height: 60rem;
+}
+
+body .header-container .headerDetailSec .headerDescSec {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+}
+
+body .header-container .headerDetailSec .headerDescSec h1 {
+  font-size: 90px;
+}
+
+body .header-container .headerDetailSec .headerDescSec h1 span {
+  color: #e7b512d2;
+}
+
+body .header-container .headerDetailSec .headerDescSec p {
+  font-size: 25px;
+  margin-top: 1.5rem;
+}
+
+body .classicMasala {
+  height: 105vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 5rem;
+  color: #000;
+      grid-template-areas: 'prodimage prodAdv' 'productCard productCard';
+}
+
+body .classicMasala .prodimage {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: prodimage;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .classicMasala .prodAdv {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: prodAdv;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .classicMasala .prodAdv h1 {
+  margin: 3rem;
+  color: crimson;
+}
+
+body .classicMasala .prodAdv p {
+  width: 60%;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+body .classicMasala .addons {
+  background-image: url("./assets/Combined Shape-7.svg");
+  background-repeat: no-repeat;
+  background-size: 30rem 7.5rem;
+  margin-top: 3.6rem;
+}
+
+body .classicMasala .addons #addonsB {
+  position: relative;
+  left: 13rem;
+  top: -5rem;
+  background-color: crimson;
+  width: 6rem;
+  height: 2rem;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  border-radius: 16px;
+  border: none;
+}
+
+body .classicMasala .addons #cinnamonImg {
+  height: 5.5rem;
+  position: relative;
+  left: -5.5rem;
+  top: 2rem;
+}
+
+body .classicMasala .addons #cinnamonDet {
+  position: relative;
+  left: 7rem;
+  top: -4rem;
+  width: 54%;
+}
+
+body .classicMasala .productCard {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: productCard;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4rem;
+}
+
+body .classicMasala .productCard h3 {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+body .classicMasala .productCard .prodCats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 1rem;
+}
+
+body .classicMasala .productCard .prodCats .prodCat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  margin: 0rem 2.5rem;
+  padding: 0.2rem;
+  width: 14rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+}
+
+body .classicMasala .productCard .prodCats .prodCat img {
+  height: 5rem;
+  width: 5rem;
+}
+
+body .classicMasala .productCard .prodCats .active {
+  background-color: white;
+  border: 1px solid red;
+}
+
+body .classicMasala .productCard .prodCats .arrow-button {
+  border: none;
+  background: transparent;
+}
+
+body .classicMasala .productCard .prodCats .arrow-button img {
+  height: 2rem;
+  width: 2rem;
+}
+
+body .DelAndHel {
+  height: 90vh;
+  background-color: #e7b512d2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.1fr 1fr;
+      grid-template-columns: 1.1fr 1fr;
+      grid-template-areas: 'descSect imageSect';
+  padding-top: 1rem;
+}
+
+body .DelAndHel .descSect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: descSect;
+}
+
+body .DelAndHel .imageSect {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: imageSect;
+}
+
+body .DelAndHel .imageSect img {
+  width: 100%;
+  height: 89.9%;
+}
+
+body .top-zigzag {
+  z-index: 3;
+  position: relative;
+}
+
+body .top-zigzag:before {
+  background: linear-gradient(-45deg, #e7b512d2 16px, transparent 0), linear-gradient(45deg, #e7b512d2 16px, transparent 0);
+  background-position: left top;
+  background-repeat: repeat-x;
+  background-size: 22px 32px;
+  content: ' ';
+  display: block;
+  height: 32px;
+  width: 191%;
+  position: relative;
+  bottom: 43.9rem;
+  left: 0;
+}
+/*# sourceMappingURL=style.css.map */
